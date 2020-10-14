@@ -30,6 +30,10 @@ var paths = {
 		input: 'src/sass/**/*.{scss,sass}',
 		output: 'dist/css/'
 	},
+	images: {
+		input: 'src/images/**/*.{png,jpg}',
+		output: 'dist/images/',
+},
 	svgs: {
 		input: 'src/svg/*.svg',
 		output: 'dist/svg/'
@@ -37,6 +41,10 @@ var paths = {
 	copy: {
 		input: 'src/copy/**/*',
 		output: 'dist/'
+	},
+	html: {
+			input: 'src/ejs/*.ejs',
+			output: 'dist/',
 	},
 	reload: './dist/'
 };
@@ -83,13 +91,25 @@ var postcss = require('gulp-postcss');
 var prefix = require('autoprefixer');
 var minify = require('cssnano');
 
+//HTML
+var ejs = require('gulp-ejs');
+
+
+//Images
+var imagemin = require('gulp-imagemin');
+
 // SVGs
 var svgmin = require('gulp-svgmin');
 
 // BrowserSync
 var browserSync = require('browser-sync');
 
+//Utils
+var gulpIf = require('gulp-if');
+var zip = require('gulp-zip');
+var { argv } = require('yargs');
 
+var PRODUCTION = argv.prod;
 /**
  * Gulp Tasks
  */
@@ -193,6 +213,7 @@ var buildStyles = function (done) {
 			sourceComments: true
 		}))
 		.pipe(postcss([
+			require('tailwindcss'),
 			prefix({
 				cascade: true,
 				remove: true
@@ -212,6 +233,32 @@ var buildStyles = function (done) {
 
 };
 
+var buildHTML = function (done) {
+	return src(paths.html.input)
+			.pipe(
+					ejs(),
+			)
+			.pipe(
+					rename({
+							extname: '.html',
+					}),
+			)
+			.pipe(dest(paths.html.output));
+};
+
+var optimiseImages = function (done) {
+	return src(paths.images.input)
+			.pipe(
+					gulpIf(
+							PRODUCTION,
+							imagemin({
+									verbose: true,
+							}),
+					),
+			)
+			.pipe(dest(paths.images.output));
+};
+
 // Optimize SVG files
 var buildSVGs = function (done) {
 
@@ -223,6 +270,12 @@ var buildSVGs = function (done) {
 		.pipe(svgmin())
 		.pipe(dest(paths.svgs.output));
 
+};
+
+var zipFiles = function (done) {
+	return src('dist/**/*')
+			.pipe(zip(`build-${Date.now()}.zip`))
+			.pipe(dest('builds/'));
 };
 
 // Copy static files into output folder
@@ -278,18 +331,18 @@ var watchSource = function (done) {
 exports.default = series(
 	cleanDist,
 	parallel(
-		buildScripts,
-		lintScripts,
-		buildStyles,
-		buildSVGs,
-		copyFiles
-	)
+			buildScripts,
+			lintScripts,
+			buildStyles,
+			buildSVGs,
+			copyFiles,
+			buildHTML,
+			optimiseImages,
+	),
 );
 
 // Watch and reload
 // gulp watch
-exports.watch = series(
-	exports.default,
-	startServer,
-	watchSource
-);
+exports.watch = series(exports.default, startServer, watchSource);
+
+exports.build = series(exports.default, zipFiles);
