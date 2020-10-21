@@ -27,7 +27,7 @@ var paths = {
 		output: 'dist/js/'
 	},
 	styles: {
-		input: 'src/sass/**/*.css',
+		input: 'src/styles/**/*.css',
 		output: 'dist/css/'
 	},
 	images: {
@@ -209,6 +209,7 @@ var buildStyles = function (done) {
 	// Run tasks on all Sass files
 	return src(paths.styles.input)
 		.pipe(postcss([
+			require('precss'),
 			require('tailwindcss'),
 			prefix({
 				cascade: true,
