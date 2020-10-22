@@ -1,0 +1,13 @@
+.nav {
+  &-link {
+    display: block;
+    font-size: theme('fontSize.sm');
+  }
+}
+
+.navbar {
+  .nav-link {
+    padding: theme('spacing.3')
+  }
+}
+

@@ -1,12 +1,13 @@
 /**
  * @section Base Styles
  */
-
+html {
+	font-size: rfs(theme('fontSize.base'));
+}
 body {
-	font-size: 125%;
-	margin: 0 auto;
-	max-width: 42em;
-	width: 88%;
+	font-family: 'Product Sans';
+	background-color: theme('colors.grey.lighter');
+	color: theme('colors.grey.darker');
 }
 
 input,
@@ -14,4 +15,18 @@ textarea,
 select,
 button {
 	font: inherit;
+}
+
+a {
+	color: theme('colors.grey.darker');
+	text-decoration: none;
+}
+
+@layer base {
+	.container {
+		@apply m-auto px-2
+	}
+}
+.material-icons {
+	font-size: rfs(36px);
 }

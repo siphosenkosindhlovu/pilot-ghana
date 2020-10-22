@@ -211,6 +211,11 @@ var buildStyles = function (done) {
 		.pipe(postcss([
 			require('precss'),
 			require('tailwindcss'),
+			require('rfs'),
+			require('postcss-font-magician')({
+				formats: ['ttf'],
+				hosted: ['./src/copy/fonts', '../fonts']
+			}),
 			prefix({
 				cascade: true,
 				remove: true

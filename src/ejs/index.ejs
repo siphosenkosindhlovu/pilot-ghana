@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Copy Me</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
-	<h1>Copy Me</h1>
+	<section>
+		<div class="container navbar m-auto lg:flex lg:justify-between">
+			<nav class="flex flex-col lg:flex-row">
+				<a href="#" class="nav-link font-bold text-violet">Logo</a>
+				<a href="#" class="nav-link">About us</a>
+				<a href="#" class="nav-link">Our services</a>
+				<a href="#" class="nav-link">Demo access</a>
+				<a href="#" class="nav-link">Contact us</a>
+			</nav>
+			<nav>
+				<a href="#" class="nav-link inline-flex opacity-60">Sign in
+					<i class="material-icons text-violet text-base ml-1">login</i>
+				</a>
+			</nav>
+		</div>
 
-	<p>Anything you put in the <code>copy</code> directory gets copied as-is into the <code>dist</code> directory.</p>
+		<div class="border-b-2 border-grey-darker border-solid opacity-30"></div>
+	</section>
+	<main>
+		<section class="min-h-screen relative container m-auto">
+			<div class="lg:grid lg:grid-cols-12 lg:grid-rows-1 lg:col-gap-3">
+				<div class="lg:col-start-1 lg:col-end-7 lg:row-start-1">
+					<picture>
+						<source srcset="images/Banner_2@2x.png" media="(min-width: 1024px)">
+						<img src="images/Banner_mobile.png" alt="Car" class="ml-8 sm:md-16 lg:md-0 mb-5">
+					</picture>
+				</div>
+				<div class="lg:col-start-3 lg:col-end-11 lg:row-start-1 flex flex-col justify-center">
+					<img src="svg/Our Cervices Banner text.svg" alt="The route is always known">
+					<br/>
+					<div>
+						<p class="opacity-60 text-center m-auto lg:w-3/5 xl:w-1/2">
+							The most compact tracking and analytics solutions
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="absolute inset-x-0 bottom-0 text-center">
+				<a href="#" class="p-8"><i class="material-icons">keyboard_arrow_down</i></a>
+			</div>
+		</section>
+	</main>
 
-	<p><button id="click-me">Click Me</button></p>
+	<footer class="footer">
 
-	<!-- Scripts -->
-	<script src="js/detects.js"></script>
-	<script src="js/another-file.js"></script>
-	<script src="js/main.polyfills.js"></script>
+	</footer>
 </body>
+
 </html>
