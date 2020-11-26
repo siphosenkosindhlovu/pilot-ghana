@@ -1,0 +1,10 @@
+<svg id="sim_card-24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200.017" height="200.017" viewBox="0 0 200.017 200.017">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.132" y1="0.081" x2="0.971" y2="0.967" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff9400"/>
+      <stop offset="1" stop-color="#a92fff"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_1469" data-name="Контур 1469" d="M0,0H200.017V200.017H0Z" fill="none"/>
+  <path id="Контур_1470" data-name="Контур 1470" d="M137.261,18.668A16.646,16.646,0,0,0,120.677,2H54L4,52V152.013a16.717,16.717,0,0,0,16.668,16.668H120.76a16.646,16.646,0,0,0,16.585-16.668ZM45.67,143.679H29V127.011H45.67Zm66.672,0H95.675V127.011h16.668ZM45.67,110.343H29V77.006H45.67Zm33.336,33.336H62.338V110.343H79.006Zm0-50H62.338V77.006H79.006Zm33.336,16.668H95.675V77.006h16.668Z" transform="translate(29.336 14.668)" fill="url(#linear-gradient)"/>
+</svg>

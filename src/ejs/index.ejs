@@ -1,59 +1,81 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<title>Copy Me</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-	<section>
-		<div class="container navbar m-auto lg:flex lg:justify-between">
-			<nav class="flex flex-col lg:flex-row">
-				<a href="#" class="nav-link font-bold text-violet">Logo</a>
-				<a href="#" class="nav-link">About us</a>
-				<a href="#" class="nav-link">Our services</a>
-				<a href="#" class="nav-link">Demo access</a>
-				<a href="#" class="nav-link">Contact us</a>
-			</nav>
-			<nav>
-				<a href="#" class="nav-link inline-flex opacity-60">Sign in
-					<i class="material-icons text-violet text-base ml-1">login</i>
+	<header class="absolute top-0 w-full z-50 hover:bg-grey-lighter hover:bg-opacity-30 transition-all duration-100">
+		<div class="container navbar <%= locals.variant && variant === 'light' ? 'navbar-light' : '' %>  m-auto flex flex-col lg:flex-row items-center">
+			<div class="flex w-full lg:w-auto justify-between items-center">
+				<a href="/" class="nav-link font-bold text-white flex-grow-0 p-0 py-3 pr-3">
+					<svg class="svg h-10 w-16">
+						<use xlink:href="svg/logo.svg#logo"></use>
+					</svg>
 				</a>
+				<button class="bg-transparent border-transparent p-3 material-icons lg:hidden trigger" data-target="#topNav">
+					menu
+				</button>
+			</div>
+			<nav id="topNav" class="lg:flex justify-between overflow-hidden collapsible lg:max-h-full lg:w-full">
+				<div class="flex flex-col lg:flex-row items-center">
+					<a href="/our-services.html" class="nav-link text-grey-lighter">Our services</a>
+					<a href="/about-us.html" class="nav-link text-grey-lighter">About us</a>
+					<a href="/contact-us.html" class="nav-link text-grey-lighter">Contact us</a>
+				</div>
+
+				<div>
+					<a href="#" class="nav-link inline-flex items-center text-grey-lighter group">
+						<span class="opacity-60">
+							Sign in
+						</span>
+						<i class="material-icons text-base ml-1 opacity-60 group-hover:opacity-100">login</i>
+					</a>
+				</div>
 			</nav>
 		</div>
+<div class="border-b-2 border-grey-darker border-solid opacity-30 hidden lg:block"></div>
+	</header> -->
+	<%- include('includes/header.ejs', {variant: 'light'}) %>
 
-		<div class="border-b-2 border-grey-darker border-solid opacity-30"></div>
+	<section class="min-h-screen relative flex flex-col bg-cover bg-no-repeat"
+		style="background: linear-gradient(0deg, rgba(29, 29, 27, 0.65), rgba(29, 29, 27, 0.65)), url(images/pat-kay.jpg); background-repeat: no-repeat; background-size: cover;">
+		<div class="container md:grid grid-cols-12 bg-cover bg-no-repeat">
+			<div class="col-start-2 col-span-10 md:mt-32 md:p-5 xxl:p-3">
+				<h1	class="text-xxl gradient-text font-bold md:text-center animate__animated animate__fadeInUp mb-8">
+					Powerful vehicle tracking & fleet control
+				</h1>
+				<div>
+					<p
+						class="md:text-center m-auto lg:w-3/5 xl:w-1/2 text-grey-lighter animate__animated animate__fadeInDown">
+						Pilot Ghana is an IT Services provider offering reliable technology driven solutions in Fleet Management.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div
+			class="container flex justify-between items-center col-start-1 col-span-12 mb-8 animate__animated animate__fadeIn">
+			<div>
+				<img class="h-16 " src="svg/We are in Ghana.svg" alt="We are in Ghana">
+			</div>
+			<a href="#" class="block relative w-24 text-center pt-2 group h-24">
+				<span class="text-white text-xs z-50 absolute w-full inset-x-0">Get App</span>
+				<img class="m-auto absolute bottom-0 z-40" src="images/Get app.png">
+				<div
+					class="absolute inset-0 bg-gradient-to-b from-aquamarine to-violet opacity-60 group-hover:opacity-90 rounded-2xl z-0">
+				</div>
+			</a>
+		</div>
 	</section>
-	<main>
-		<section class="min-h-screen relative container m-auto">
-			<div class="lg:grid lg:grid-cols-12 lg:grid-rows-1 lg:col-gap-3">
-				<div class="lg:col-start-1 lg:col-end-7 lg:row-start-1">
-					<picture>
-						<source srcset="images/Banner_2@2x.png" media="(min-width: 1024px)">
-						<img src="images/Banner_mobile.png" alt="Car" class="ml-8 sm:md-16 lg:md-0 mb-5">
-					</picture>
-				</div>
-				<div class="lg:col-start-3 lg:col-end-11 lg:row-start-1 flex flex-col justify-center">
-					<img src="svg/Our Cervices Banner text.svg" alt="The route is always known">
-					<br/>
-					<div>
-						<p class="opacity-60 text-center m-auto lg:w-3/5 xl:w-1/2">
-							The most compact tracking and analytics solutions
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="absolute inset-x-0 bottom-0 text-center">
-				<a href="#" class="p-8"><i class="material-icons">keyboard_arrow_down</i></a>
-			</div>
-		</section>
-	</main>
 
-	<footer class="footer">
-
-	</footer>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

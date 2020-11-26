@@ -1,0 +1,10 @@
+<svg id="battery_charging_full-24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200.263" height="200.263" viewBox="0 0 200.263 200.263">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff634d"/>
+      <stop offset="1" stop-color="#a92fff"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_1467" data-name="Контур 1467" d="M0,0H200.263V200.263H0Z" fill="none"/>
+  <path id="Контур_1468" data-name="Контур 1468" d="M79.345,18.689H65.41V2H32.033V18.689H18.1A11.147,11.147,0,0,0,7,29.786V157.7a11.165,11.165,0,0,0,11.1,11.181H79.261a11.165,11.165,0,0,0,11.181-11.1v-128A11.147,11.147,0,0,0,79.345,18.689ZM40.377,152.2V106.3H23.689L57.066,43.721V89.615H73.754Z" transform="translate(51.41 14.689)" fill="url(#linear-gradient)"/>
+</svg>

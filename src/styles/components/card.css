@@ -1,0 +1,23 @@
+.card {
+  border-radius: theme('borderRadius.2xl');
+  background-color: white;
+  padding: 2.25rem;
+  &-title {
+    font-size: var(--header-2);
+    @apply font-bold mb-3;
+  }
+  &-subtitle {
+    @apply mb-3;
+  }
+}
+
+@media screen and (min-width: theme('screens.xxl')) {
+  .card {
+    padding: theme('padding.8');
+    border-radius: theme('borderRadius.4xl');
+    &-title {
+    font-size: theme('fontSize.md');
+    @apply font-bold mb-3;
+  }
+  }
+}

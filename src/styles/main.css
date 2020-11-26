@@ -1,6 +1,8 @@
 @tailwind base;
+@import "components/fonts";
 @import "components/base";
 @import "components/nav";
+@import "components/card";
 
 @tailwind components;
 

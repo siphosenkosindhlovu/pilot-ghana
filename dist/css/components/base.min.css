@@ -1,1 +1,290 @@
-/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */@font-face{font-family:Product Sans;font-style:normal;font-weight:400;src:url(../fonts/ProductSans-Regular.ttf) format("truetype")}@font-face{font-family:Product Sans;font-style:normal;font-weight:700;src:url(../fonts/ProductSans-Bold.ttf) format("truetype")}@font-face{font-family:Product Sans;font-style:italic;font-weight:700;src:url(../fonts/ProductSans-BoldItalic.ttf) format("truetype")}html{font-size:calc(1.34375rem + 1.125vw)}@media (min-width:1200px){html{font-size:2.1875rem}}body{font-family:Product Sans;background-color:#f6f6f7;color:#3e3e3e}button,input,select,textarea{font:inherit}a{color:#3e3e3e;text-decoration:none}.container{margin:auto;padding-left:.5rem;padding-right:.5rem}.material-icons{font-size:calc(1.35rem + 1.2vw)}@media (min-width:1200px){.material-icons{font-size:2.25rem}}
+/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/**
+ * @section Base Styles
+ */
+
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1640px) {
+  html {
+    font-size: 35px;
+  }
+}
+
+body {
+  font-family: 'Product Sans', sans-serif;
+  background-color: #F6F6F7;
+  color: #3E3E3E;
+  line-height: 1.2;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+a {
+  color: #3E3E3E;
+  text-decoration: none;
+}
+
+:root {
+  --header-1: 2.25rem;
+  --header-2: 1.875rem;
+  --body: 0.574rem;
+  --radius: 1.5rem;
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    --header-1: 2.25rem;
+    --header-2: 1.5rem;
+    --body: 0.714rem;
+    --radius: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  :root {
+    --header-1: 2rem;
+    --header-2: 1.429rem;
+    --body: 1rem;
+    --radius: 80px;
+  }
+}
+
+.container {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  margin: auto;
+}
+
+.material-icons {
+  font-size: calc(1.35rem + 0.87805vw);
+}
+
+@media (min-width: 1640px) {
+
+  .material-icons {
+  font-size: 2.25rem;
+  }
+}
+
+.header-1 {
+  font-size: 2.25rem;
+}
+
+.header-2 {
+  font-size: 1.5rem;
+}
+
+.icon-base {
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-base i {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 1640px) {
+  .icon-base {
+    border-radius: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-base i {
+    font-size: 45px;
+  }
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.collapsible {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.spaced-li li {
+  margin-bottom: 1rem;
+}
+
+.water-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #ff634d
+}
+
+.water-box.playing:before,
+    .water-box.playing:after {
+  -webkit-animation: fill 6s ease-in-out 1 forwards;
+  animation: fill 6s ease-in-out 1 forwards;
+}
+
+.water-box:before,
+  .water-box:after {
+  content: ' ';
+  background: #FF634D;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  border-radius: 220px;
+  width: 1900px;
+  height: 1900px;
+  left: 50%;
+  border-radius: 40%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 40%;
+}
+
+.water-box:before {
+  background-color: #FF9400;
+}
+
+.water-box:after {
+  background-color: #3E3E3E;
+}
+
+@-webkit-keyframes fill {
+  from {
+    bottom: 0;
+    -webkit-transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    bottom: 80%;
+    -webkit-transform: translateX(-50%) rotate(360deg);
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+@keyframes fill {
+  from {
+    bottom: 0;
+    -webkit-transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    bottom: 80%;
+    -webkit-transform: translateX(-50%) rotate(360deg);
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+bg-gradient-from-pizzaz-to-violet-136 {
+  background: linear-gradient(
+        136deg,
+        #FF9400 0%,
+        #A92FFF 100%
+      );
+}
+
+bg-gradient-from-aquamarine-to-violet-136 {
+  background: linear-gradient(
+        136deg,
+        #4DEEFF 0%,
+        #A92FFF 100%
+      );
+}
+
+bg-gradient-from-aquamarine-to-violet-116 {
+  background: linear-gradient(
+        116deg,
+        #4DEEFF 0%,
+        #A92FFF 100%
+      );
+}
+
+bg-gradient-from-persimmon-to-violet-136 {
+  background: linear-gradient(
+        136deg,
+        #FF634D 0%,
+        #A92FFF 100%
+      );
+}
+
+bg-gradient-from-persimmon-to-violet-180 {
+  background: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(theme('colors.persimmon')),
+        to(theme('colors.violet'))
+      );
+  background: linear-gradient(
+        180deg,
+        #FF634D 0%,
+        #A92FFF 100%
+      );
+}
+
+.logo {
+  fill: white;
+}
+
+.logo .fil0 {
+  fill: white;
+  fill-rule: nonzero;
+  fill-opacity: 0.4;
+}
+
+.logo .fil2 {
+  fill: white;
+  fill-rule: nonzero;
+  fill-opacity: 0.4;
+}
+
+.car {
+  min-width: 180%;
+}
+
+@media (min-width: 768px) {
+  .car {
+    min-width: unset;
+  }
+}

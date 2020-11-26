@@ -1,32 +1,235 @@
 /**
  * @section Base Styles
  */
+
 html {
-	font-size: rfs(theme('fontSize.base'));
+  font-size: 16px;
+}
+@screen md {
+  html {
+    font-size: 22px;
+  }
+}
+
+@screen xxl {
+  html {
+    font-size: 35px;
+  }
 }
 body {
-	font-family: 'Product Sans';
-	background-color: theme('colors.grey.lighter');
-	color: theme('colors.grey.darker');
+  font-family: 'Product Sans', sans-serif;
+  background-color: theme('colors.grey.lighter');
+  color: theme('colors.grey.darker');
+  line-height: 1.2;
 }
 
 input,
 textarea,
 select,
 button {
-	font: inherit;
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
 }
 
 a {
-	color: theme('colors.grey.darker');
-	text-decoration: none;
+  color: theme('colors.grey.darker');
+  text-decoration: none;
+}
+:root {
+  --header-1: theme('fontSize.4xl');
+  --header-2: theme('fontSize.3xl');
+  --body: theme('fontSize.xs');
+  --radius: theme('borderRadius.3xl');
+}
+
+@media screen and (min-width: theme('screens.xl')) {
+  :root {
+    --header-1: theme('fontSize.4xl');
+    --header-2: theme('fontSize.2xl');
+    --body: theme('fontSize.sm');
+    --radius: theme('borderRadius.3xl');
+  }
+}
+
+@media screen and (min-width: theme('screens.xxl')) {
+  :root {
+    --header-1: theme('fontSize.lg');
+    --header-2: theme('fontSize.md');
+    --body: theme('fontSize.base');
+    --radius: theme('borderRadius.4xl');
+  }
 }
 
 @layer base {
-	.container {
-		@apply m-auto px-2
-	}
+  .container {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    @apply m-auto;
+  }
 }
 .material-icons {
-	font-size: rfs(36px);
+  font-size: rfs(36px);
+}
+
+.header-1 {
+  font-size: theme('fontSize.4xl');
+}
+.header-2 {
+  font-size: theme('fontSize.2xl');
+}
+
+.icon-base {
+  @apply rounded-lg flex items-center justify-center;
+  width: 2rem;
+  height: 2rem;
+  i {
+    font-size: 1.25rem;
+  }
+}
+
+@screen xxl {
+  .icon-base {
+    @apply rounded-lg flex items-center justify-center;
+    width: 70px;
+    height: 70px;
+    i {
+      font-size: 45px;
+    }
+  }
+}
+
+.content {
+  p {
+    @apply mb-6;
+  }
+}
+
+.collapsible {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.spaced-li {
+  li {
+    @apply mb-4;
+  }
+}
+
+.water-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #ff634d;
+  &.playing {
+    &:before,
+    &:after {
+      animation: fill 6s ease-in-out 1 forwards;
+    }
+  }
+  &:before,
+  &:after {
+    content: ' ';
+    background: theme('colors.persimmon');
+    position: absolute;
+    bottom: 0;
+    display: block;
+    border-radius: 220px;
+    width: 1900px;
+    height: 1900px;
+    left: 50%;
+    border-radius: 40%;
+    transform: translateX(-50%);
+    border-radius: 40%;
+  }
+  &:before {
+    background-color: theme('colors.pizzaz');
+  }
+  &:after {
+    background-color: theme('colors.grey.darker');
+  }
+}
+@keyframes fill {
+  from {
+    bottom: 0;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    bottom: 80%;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+bg-gradient {
+  &-from-pizzaz-to-violet {
+    &-136 {
+      background: linear-gradient(
+        136deg,
+        theme('colors.pizzaz') 0%,
+        theme('colors.violet') 100%
+      );
+    }
+  }
+  &-from-aquamarine-to-violet {
+    &-136 {
+      background: linear-gradient(
+        136deg,
+        theme('colors.aquamarine') 0%,
+        theme('colors.violet') 100%
+      );
+    }
+    &-116 {
+      background: linear-gradient(
+        116deg,
+        theme('colors.aquamarine') 0%,
+        theme('colors.violet') 100%
+      );
+    }
+  }
+  &-from-persimmon-to-violet {
+    &-136 {
+      background: linear-gradient(
+        136deg,
+        theme('colors.persimmon') 0%,
+        theme('colors.violet') 100%
+      );
+    }
+    &-180 {
+      background: linear-gradient(
+        180deg,
+        theme('colors.persimmon') 0%,
+        theme('colors.violet') 100%
+      );
+    }
+  }
+}
+
+.logo {
+  fill: white;
+  .fil0 {
+    fill: white;
+    fill-rule: nonzero;
+    fill-opacity: 0.4;
+  }
+  .fil2 {
+    fill: white;
+    fill-rule: nonzero;
+    fill-opacity: 0.4;
+  }
+}
+
+.car {
+  min-width: 180%;
+}
+
+@screen md {
+  .car {
+    min-width: unset;
+  }
 }

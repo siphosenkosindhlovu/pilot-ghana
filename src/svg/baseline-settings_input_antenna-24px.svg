@@ -1,0 +1,11 @@
+<svg id="baseline-settings_input_antenna-24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4deeff"/>
+      <stop offset="0.483" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#545454"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_453" data-name="Контур 453" d="M0,0H200V200H0Z" fill="none"/>
+  <path id="Контур_454" data-name="Контур 454" d="M92.667,34.333A58.291,58.291,0,0,0,34.333,92.667H51a41.667,41.667,0,0,1,83.333,0H151A58.291,58.291,0,0,0,92.667,34.333ZM101,111.75a20.833,20.833,0,1,0-16.667,0v27.5L55.917,167.667l11.75,11.75,25-25,25,25,11.75-11.75L101,139.25ZM92.667,1A91.721,91.721,0,0,0,1,92.667H17.667a75,75,0,0,1,150,0h16.667A91.721,91.721,0,0,0,92.667,1Z" transform="translate(7.333 7.333)" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="bluetooth-24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200.192" height="200.192" viewBox="0 0 200.192 200.192">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.068" x2="1.158" y2="0.822" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4deeff"/>
+      <stop offset="1" stop-color="#a92fff"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_1465" data-name="Контур 1465" d="M0,0H200.192V200.192H0Z" fill="none"/>
+  <path id="Контур_1466" data-name="Контур 1466" d="M111.019,49.629,63.389,2H55.048V65.311L16.761,27.024,5,38.785,51.628,85.414,5,132.042,16.761,143.8l38.287-38.287v63.311h8.341L111.019,121.2,75.151,85.414l35.868-35.784ZM71.731,33.947,87.413,49.629,71.731,65.311ZM87.413,121.2,71.731,136.88V105.516L87.413,121.2Z" transform="translate(36.707 14.683)" fill="url(#linear-gradient)"/>
+</svg>

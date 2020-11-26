@@ -12,6 +12,12 @@
 		"type": "git",
 		"url": "http://link-to-your-git-repo.com"
 	},
+	"scripts": {
+		"start": "gulp watch",
+		"start:prod": "gulp watch --prod",
+		"build" : "gulp build --prod",
+		"build:dev" : "gulp build"
+	},
 	"boilerplate": {
 		"version": "2.2.6",
 		"author": "Chris Ferdinandi",
@@ -30,6 +36,7 @@
 		"gulp": "4.0.2",
 		"gulp-concat": "2.6.1",
 		"gulp-ejs": "^5.1.0",
+		"gulp-env": "^0.4.0",
 		"gulp-flatmap": "1.0.2",
 		"gulp-header": "2.0.5",
 		"gulp-if": "^3.0.0",
