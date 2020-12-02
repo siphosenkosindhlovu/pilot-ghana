@@ -74,6 +74,9 @@ a {
     padding-right: 2.25rem;
     @apply m-auto;
   }
+  .bg-clip-text {
+    -webkit-background-clip: text;
+  }
 }
 .material-icons {
   font-size: rfs(36px);

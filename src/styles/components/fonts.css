@@ -101,5 +101,5 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  @apply bg-right bg-clip-text text-transparent bg-no-repeat;
+  @apply bg-right text-transparent bg-no-repeat bg-cover;
 }

@@ -216,7 +216,6 @@ var buildStyles = function (done) {
         }),
         prefix({
           cascade: true,
-          remove: true,
         }),
       ]),
     )
@@ -273,7 +272,7 @@ var buildSVGs = function (done) {
 
 var zipFiles = function (done) {
   return src('dist/**/*')
-    .pipe(zip(`build-${Date.now()}.zip`))
+    .pipe(zip(`${package.name}-${Date.now()}.zip`))
     .pipe(dest('builds/'));
 };
 

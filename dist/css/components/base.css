@@ -1,4 +1,4 @@
-/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! pilot-ghana v1.0.0 | (c) 2020 Siphosenkosi NDhlovu | MIT License | http://link-to-your-git-repo.com */
 /**
  * @section Base Styles
  */
@@ -13,7 +13,7 @@ html {
   }
 }
 
-@media (min-width: 1640px) {
+@media (min-width: 1920px) {
   html {
     font-size: 35px;
   }
@@ -63,7 +63,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1640px) {
+@media screen and (min-width: 1920px) {
   :root {
     --header-1: 2rem;
     --header-2: 1.429rem;
@@ -76,6 +76,10 @@ a {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
   margin: auto;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
 }
 
 .material-icons {
@@ -116,7 +120,7 @@ a {
   font-size: 1.25rem;
 }
 
-@media (min-width: 1640px) {
+@media (min-width: 1920px) {
   .icon-base {
     border-radius: 0.5rem;
     display: -webkit-box;

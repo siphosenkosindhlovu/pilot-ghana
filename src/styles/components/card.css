@@ -1,7 +1,7 @@
 .card {
   border-radius: theme('borderRadius.2xl');
   background-color: white;
-  padding: 2.25rem;
+  padding: theme("spacing.7");
   &-title {
     font-size: var(--header-2);
     @apply font-bold mb-3;

@@ -1,59 +1,193 @@
-<%- include('includes/header.ejs') %>
-<section class="min-h-screen relative container m-auto mt-16">
-  <div class="md:grid md:grid-cols-12">
-    <div class="md:col-start-2 md:col-span-10 content">
-      <h1 class="header-1 my-6 text-persimmon">
-        About Us
+<%- include('includes/header.ejs', {variant: 'light', page: 'Home'}) %>
+<section class="min-h-screen relative lg:flex">
+  <div class="container md:grid grid-cols-12">
+    <div class="col-start-4 col-span-6 mt-32 md:mt-32 md:p-5 xxl:p-3 text-center">
+      <h1 class="text-5xl md:text-lg gradient-text font-bold md:text-center animate__animated animate__fadeInUp mb-8">
+        The power of Pilot.<br />Put to work.
       </h1>
-      <p>
-        Pilot Ghana provides innovative technology solutions in Fleet Control and Powerful Vehicle Tracking. Hence
-        making
-        use of the modern-day Internet of Things (IoT), and Telematics for the purpose of connecting, exchanging,
-        reading,
-        and analyzing data. Our reliable solutions and dedication to providing excellent service to associates have seen
-        us build a large portfolio of highly satisfied clients in over the world. We are proud that our solutions have
-        been recognized internationally and we are ready to duplicate that.
-        Our powerful branded solution comes from our deep understanding of vehicle tracking and fleet control, as well
-        as
-        a strong commitment to quality and client satisfaction.
-      </p>
-
+      <div>
+        <p class="md:text-center m-auto lg:w-3/5 xl:w-4/5 text-grey-lighter animate__animated animate__fadeInDown">
+          Pilot Ghana provides innovative technology solutions in Fleet Control and Powerful Vehicle Tracking.</p>
+      </div>
+    </div>
+    <img class="hidden lg:block absolute left-0 h-96 xxl:h-auto" src="images/splitMac.png" alt="">
+    <div class="col-span-3 hidden lg:block">
+      <img src="images/iPhone 11 Pro 3.png">
+    </div>
+  </div>
+  <img class="lg:hidden w-full" src="images/MacPad.png" alt="">
+</section>
+<div class="container md:grid grid-cols-12">
+  <section class="col-span-12 md:col-start-2 md:col-end-12 mb-16">
+    <h2 class="font-bold text-2xl text-white xl:w-2/3 md:text-md md:pl-8 mb-12">
+      Our reliable solutions and dedication to providing excellent service to associates have seen us build a large
+      portfolio of highly satisfied clients in over the world.
+    </h2>
+    <div class="md:grid grid-cols-4 md:grid-cols-10 relative">
+      <img class="col-start-1 col-span-full lg:col-start-1 lg:col-span-4 object-cover row-span-full object-center"
+        src="images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg" alt="" srcset="">
+      <div
+        class="card lg:rounded-l-none bg-transparent md:bg-grey-darker absolute lg:static inset-0 md:col-span-6 row-span-full">
+        <h3
+          class="card-title text-2xl md:text-md lg:mb-6 inline-block bg-gradient-to-br from-violet to-aquamarine bg-clip-text text-transparent mb-8 md:mb-12">
+          With great power comes great productivity
+        </h3>
+        <div class="card-body">
+          Our powerful branded solution comes from our deep understanding of vehicle tracking and fleet control, as well
+          as a strong commitment to quality and client satisfaction.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="col-span-12 md:col-start-2 md:col-end-12 mb-16">
+    <div class="md:pl-8 xl:w-3/5 xxl: mb-12">
+      <h2 class="font-bold text-2xl text-white md:text-md mb-12">
+        When people love what they do, what they do is amazing.
+      </h2>
       <p>
         We pride ourselves on understanding the needs of our clients and have been supplying quality, reliable solutions
         for over the years.
       </p>
-      <p>
-        Pilot Ghana has highly respected partnerships that have been carefully selected to guarantee we only provide
+    </div>
+
+    <div class="card bg-grey-darker lg:grid grid-cols-10 overflow-hidden">
+      <div class="mb-20 lg:mb-0 col-span-5">
+        <div class="card-title mb-8">
+          <img class="h-16" src="svg/We are in Ghana.svg" alt="We are in Ghana" srcset="">
+        </div>
+        <div class="card-body">
+          <p class="mb-10 opacity-90">Being present in Accra, Ghana in the center of the region gives our team the
+            advantage of
+            mobility to
+            respond to our partner & customer needs instantly.</p>
+          <div class="grid grid-cols-1 xl:grid-cols-2 gap-10 font-bold">
+            <div>
+              <h4
+                class="text-6xl xl:text-xxl bg-gradient-to-l from-aquamarine to-violet bg-clip-text text-transparent inline-block">
+                10+
+              </h4>
+              <p class="text-xl opacity-90">
+                Million IoT devices deployed
+              </p>
+            </div>
+            <div>
+              <h4
+                class="text-6xl xl:text-xxl whitespace-no-wrap bg-gradient-to-br from-grey-lighter to-gray-700 bg-clip-text text-transparent inline-block">
+                22 <small>years</small>
+              </h4>
+              <p class="text-xl opacity-90">
+                Telematics, and IoT business.
+              </p>
+            </div>
+            <div>
+              <h4
+                class="text-6xl xl:text-xxl bg-gradient-to-br to-grey-lighter from-gray-700 bg-clip-text text-transparent inline-block">
+                1100+
+              </h4>
+              <p class="text-xl opacity-90">
+                Employees worldwide
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="-mx-2lg -mb-2lg lg:-my-7 lg:-mr-7 lg:ml-0 col-start-7 col-span-4 bg-cover bg-center bg-no-repeat pb-full"
+        style="background-image: url(images/adam-acosta-h5p-AiQoLTA-unsplash.jpg);">
+      </div>
+    </div>
+  </section>
+  <section class="col-span-12 md:col-start-2 md:col-end-12 mb-16">
+    <h2 class="font-bold text-2xl text-white xl:w-3/5 md:text-md md:pl-8 mb-12">
+      We are a world-class team of engineers, thought leaders, and techies that have one thing in common: simplify and
+      make life brighter at every stage & moment.
+    </h2>
+
+    <div class="card bg-grey-darker lg:grid grid-cols-10 overflow-hidden colspa">
+      <div class="-mx-2lg -mt-2lg lg:-my-7 lg:-ml-7 lg:mr-0 col-span-4 bg-cover bg-center bg-no-repeat pb-full"
+        style="background-image: url(images/ryoji-iwata-X53e51WfjlE-unsplash.jpg);">
+      </div>
+      <div class="card-body mt-12 lg:mt-0 col-start-6 col-span-6">
+        <h3 class="card-title text-transparent inline-block bg-gradient-to-r from-violet to-aquamarine bg-clip-text">Our
+          Vision</h3>
+        <p>
+          In a fast-growing technological era with increasing competition, We keep the hope of maintaining our stand as
+          a Top-notch technology services provider for Ghana and Africa.
+        </p>
+        <br>
+        <h3 class="card-title text-transparent inline-block bg-gradient-to-r from-pizzaz to-persimmon bg-clip-text">Our
+          Mission</h3>
+        <p>
+          In a fast-growing technological era with increasing competition, We keep the hope of maintaining our stand as
+          a Top-notch technology services provider for Ghana and Africa.
+        </p>
+      </div>
+  </section>
+  <section class="col-span-12 md:col-start-2 md:col-end-12 mb-16">
+    <div class="card rounded-none bg-cover"
+      style="background-image: linear-gradient(to bottom, rgba(29, 29, 27, 0.467), #1D1D1B), url(images/christina-wocintechchat-com-UcZcsHSp8o4-unsplash.jpg);">
+      <h2 class="card-title text-2xl md:text-lg mb-8 lg:w-3/5">
+        Great partners bring great possibility.
+      </h2>
+      <p class="lg:w-2/3 xl:w-2/5">
+        Pilot has highly respected partnerships that have been carefully selected to guarantee we only provide
         high-quality software and hardware solutions ensuring that our clients’ expectations are met while our ethic of
         only providing quality, reliable systems are duly maintained.
       </p>
-      <p>
-        Being present in Accra, Ghana in the center of the region gives our team the advantage of mobility to respond to
-        our partner &amp; customer needs instantly.
-        In short, we are huge: 10+ million IoT devices deployed, 1100+ employees worldwide, 22 years of Telematics, and
-        IoT business.
-      </p>
-      <p>
-
-        We are a world-class team of engineers, thought leaders, and techies that have one thing in common: simplify and
-        make life brighter at every stage &amp; moment.
-
-      </p>
-      <p>
-
-        Our Vision: In a fast-growing technological era with increasing competition, We keep the hope of maintaining our
-        stand as a Top-notch technology services provider for Ghana and Africa.
-      </p>
-      <p>
-
-        Our Mission: To provide individuals, businesses, and the society at large with the best, smart, and effective
-        technology-driven solutions in the transportation sector, fleet management, and areas regarding vehicle security
-        in order to boost productivity.
-      </p>
     </div>
-  </div>
-</section>
-<script src="js/script.js"></script>
-</body>
+  </section>
 
-</html>
+  <section class="col-span-12 md:col-start-2 md:col-end-12 mb-16">
+    <h2 class="text-2xl md:text-lg mb-8 md:mb-12">Suppliers who<br /> work with us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="card bg-grey-darker">
+        <img class="card-subtitle h-8 mb-8" src="images/teltonika_logo.png" alt="">
+        <div class="card-title text-2xl">
+          Teltonika creates solutions for Pilot to transform your transport business
+        </div>
+        <div class="card-body">
+          <p class="mb-5">Teltonika more than 20 years successfully developing Internet of Things. To meet expectations
+            of our
+            customers we constantly upgrade our existing products and launch new ones. Your goals can be achieved with
+            the help of our R&D department.</p>
+          <a class="text-aquamarine" href="http://#">Learn more</a>
+        </div>
+      </div>
+      <div class="card bg-grey-darker">
+        <img src="images/logo-eng.png" alt="">
+        <div class="card-title text-2xl">
+          Implementation of products in the transport industry from Escort
+        </div>
+        <div class="card-body">
+          <p class="mb-5">We, as producers of our own goods, see our supreme task in providing the best products by
+            their
+            functionality and cost and to offer the reliable, high quality equipment to our customers. <br /> We have
+            successfully marketed over 500,000 various devices and the rate of their production keeps growing.</p>
+          <a class="text-aquamarine" href="http://#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="col-span-12 md:col-start-2 md:col-end-12 mb-16">
+    <h2 class="text-2xl md:text-lg mb-8 md:mb-12">
+      Our Partners</h2>
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-10 md:grid-rows-2">
+      <% ["logo_skyfms.png", "logo-new.png", "red-logo.png", "BMZ_dBQo_400x400.png"].forEach(element => { %>
+      <div class="rounded-3xl p-0 overflow-hidden pb-full relative md:col-span-2 bg-white"><img
+          class="absolute inset-0 transform -translate-y-1/2 mx-auto" style="top: 50%"
+          src="images/<%= element %>" alt=""></div>
+      <% }) %>
+      <div class="rounded-3xl p-0 overflow-hidden pb-full relative md:col-span-2 md:row-start-2" style="background-color: #1CA8A8;"><img
+          class="absolute inset-0 transform -translate-y-1/2 mx-auto" style="top: 50%" src="images/logo.png" alt="">
+      </div>
+      <div class="rounded-3xl p-0 overflow-hidden pb-full relative md:col-span-2 md:row-start-2" style="background-color: #D4002A;"><img
+          class="absolute inset-0 transform -translate-y-1/2 mx-auto" style="top: 50%" src="images/Canvas.png" alt="">
+      </div>
+      <div class="rounded-3xl p-0 overflow-hidden pb-full relative md:col-span-2 md:row-start-2" style="background-color: #3E3E3E;"><img
+          class="absolute inset-0 transform -translate-y-1/2 mx-auto" style="top: 50%" src="images/logo-tr1.png" alt="">
+      </div>
+    </div>
+  </section>
+
+</div>
+<%- include('includes/footer.ejs') %>

@@ -1,10 +1,10 @@
 {
-	"name": "project-name",
-	"version": "0.0.1",
+	"name": "pilot-ghana",
+	"version": "1.0.0",
 	"description": "A description for your project.",
 	"main": "./dist/your-main-js-file.js",
 	"author": {
-		"name": "YOUR NAME",
+		"name": "Siphosenkosi NDhlovu",
 		"url": "http://link-to-your-website.com"
 	},
 	"license": "MIT",

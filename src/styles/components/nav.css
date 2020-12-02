@@ -10,7 +10,11 @@
 .navbar {
   &-light {
     .nav-link {
-      @apply text-grey-lighter;
+      @apply text-grey-lighter transition-all duration-200;
+
+      &:hover {
+        @apply text-violet
+      }
     }
     .nav-trigger {
       .bar {
