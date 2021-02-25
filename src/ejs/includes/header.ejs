@@ -15,14 +15,15 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="whatsapp/whatsapp.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body class="overflow-x-hidden <%= locals.variant && variant === 'light' ? 'bg-grey-dark_alt text-white': ''%> ">
-	<header class="absolute top-0 w-full z-50 transition-all">
+	<header class="absolute top-0 w-full z-50 transition-all bg-white bg-opacity-30">
 		<div class="container navbar <%= locals.variant && variant === 'light' ? 'navbar-light' : '' %> m-auto flex flex-col lg:flex-row items-center">
 			<div class="flex justify-between w-full lg:w-auto z-50">
-				<a href="/" class="nav-link nav-brand font-bold text-violet flex-grow-0 p-0 py-3 pr-3 transition-all duration-500">
+				<a href="/" class="nav-brand font-bold <%= locals.variant && variant === 'light' ? 'text-white' : 'text-violet' %> flex-grow-0 p-0 py-3 pr-3 transition-all duration-500">
 					<svg class="svg h-12 w-24">
 						<use xlink:href="svg/logo.svg#logo"></use>
 					</svg>
@@ -35,25 +36,29 @@
 			<nav id="topNav" 
 				class="lg:flex justify-between overflow-hidden collapsible lg:max-h-full lg:w-full">
 				<div class="flex flex-col lg:flex-row items-center">
-					<a href="our-services.html" class="nav-link">Our services</a>
-					<a href="about-us.html" class="nav-link">About us</a>
-					<a href="contact-us.html" class="nav-link">Contact us</a>
+					<a href="/" class="nav-link">Home</a>
+					<a href="#" class="nav-link">Demo</a>
+					<a href="pricing.html" class="nav-link">Pricing</a>
+					<a href="#" class="nav-link">Download</a>
+					<a href="about-us.html" class="nav-link">About</a>
+					<a href="contact-us.html" class="nav-link">Contact</a>
 				</div>
 				<div>
 					<a href="#" class="nav-link inline-flex group">
 						<span class="opacity-60">
-							Sign in
-						</span> 
-						<i class="material-icons text-violet text-base ml-1 opacity-60 group-hover:opacity-100">login</i>
-					</a>
+							Login
+						</span></a>
 				</div>
 			</nav>
 			<nav id="navbarMobile" class="navbar-mobile fixed right-0 inset-y-0 w-screen h-screen bg-violet text-white text-3xl font-bold py-6half lg:hidden overflow-x-hidden">
 				<div class="flex flex-col pt-24 h-full container">
-					<a href="our-services.html" class="block py-4 slide-in-left">Our services</a>
-					<a href="about-us.html" class="block py-4 slide-in-left">About Us</a>
-					<a href="contact-us.html" class="block py-4 slide-in-left">Contact Us</a>
-					<a href="#" class="mt-auto mb-12 slide-in-left">Sign In</a>
+					<a href="/" class="block py-4 slide-in-left">Home</a>
+					<a href="#" class="block py-4 slide-in-left">Demo</a>
+					<a href="pricing.html" class="block py-4 slide-in-left">Pricing</a>
+					<a href="#" class="block py-4 slide-in-left">Download</a>
+					<a href="about-us.html" class="block py-4 slide-in-left">About</a>
+					<a href="contact-us.html" class="block py-4 slide-in-left">Contact</a>
+					<a href="#" class="mt-auto mb-12 slide-in-left">Login</a>
 				</div>
 			</nav>
 		</div>

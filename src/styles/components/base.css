@@ -236,3 +236,365 @@ bg-gradient {
     min-width: unset;
   }
 }
+
+body{
+  background-color: #F6F6F7;
+}
+[class*='block-']{
+  border-radius: 40px;
+  @media (max-width: 768px) {
+    border-radius: 20px;
+  }
+  h5{
+    font-family: 'Product Sans', sans-serif;
+    font-weight: normal;
+    font-size: 2vw;
+    margin-bottom: 20px;
+    word-break: break-word;
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+    }
+  }
+  h2{
+    font-family: 'Product Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-bottom: 30px;
+    word-break: break-word;
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+  }
+  p{
+    margin-bottom: 50px;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    @media (max-width: 600px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.grid-gap-30{
+  grid-gap: 30px;
+  @media (max-width: 600px) {
+    grid-gap: 15px;
+  }
+}
+.grid-rows-18{
+  grid-template-rows: repeat(9, 1fr);
+  @media (max-width: 1024px) {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  @media (max-width: 600px) {
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+.btn-order{
+  background-color: white;
+  color: #3E3E3E;
+  font-size: 20px;
+  padding: .6em 1em;
+  border-radius: 10px;
+  font-family: 'Product Sans', sans-serif;
+  font-weight: normal;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
+}
+.block-1{
+  grid-column: 2/8;
+  grid-row: 1/5;
+  padding: 60px 70px;
+  padding: 2em 2.5em;
+  background: transparent linear-gradient(125deg, #A92FFF 0%, #4DEEFF 100%) 0% 0% no-repeat padding-box;
+  h5{
+    color: #F6F6F7;
+    opacity: 80%;
+  }
+  h2{
+    color: #F6F6F7;
+  }
+  >span{
+    font-family: 'Product Sans', sans-serif;
+    font-weight: bold;
+    color: #F6F6F7;
+    opacity: 60%;
+    font-size: 2vw;
+  }
+  >ul{
+    font-size: 2vw;
+    color: white;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 1024px) {
+    grid-column: 2/8;
+    grid-row: 1/3;
+  }
+  @media (max-width: 768px) {
+    h5{
+      font-size: 3vw;
+    }
+    h2{
+      font-size: 5vw;
+    }
+    p{
+      font-size: 3vw;
+    }
+  }
+  @media (max-width: 600px) {
+    grid-column: 2/12;
+    grid-row: 1/3;
+    h5{
+      font-size: 3.5vw;
+    }
+    h2{
+      font-size: 6vw;
+    }
+    p{
+      font-size: 3.5vw;
+    }
+    >span{
+      font-size: 4vw;
+    }
+    >ul{
+      font-size: 4vw;
+    }
+  }
+}
+.block-2{
+  grid-column: 8/12;
+  grid-row: 1/3;
+  background: white;
+  padding: 50px 50px;
+  padding: 1.4em 1.5em;
+  @media (max-width: 1024px) {
+    grid-column: 8/12;
+    grid-row: 1/2;
+  }
+  @media (max-width: 600px) {
+    grid-column: 2/12;
+    grid-row: 5/6;
+    h5{
+      font-size: 3.5vw;
+    }
+    h2{
+      font-size: 6vw;
+    }
+    p{
+      font-size: 3.5vw;
+    }
+  }
+}
+.block-3{
+  grid-column: 2/4;
+  grid-row: 5/9;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2{
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    color: #3E3E3E;
+    opacity: 30%;
+  }
+  @media (max-width: 1024px) {
+    grid-column: 2/4;
+    grid-row: 3/5;
+    h2{
+      font-size: 3vw;
+    }
+  }
+  @media (max-width: 600px) {
+    grid-column: 2/7;
+    grid-row: 3/5;
+    h2{
+      font-size: 4vw;
+    }
+  }
+
+}
+.block-4{
+  grid-column: 4/8;
+  grid-row: 5/9;
+  background: #3E3E3E url("../images/bg-block-4.svg") no-repeat center bottom;
+  background-size: 100%;
+  padding: 50px 50px;
+  padding: 1.4em 1.5em;
+  h5{
+    font-size: 1vw;
+    color: #F6F6F7;
+    opacity: 80%;
+  }
+  h2{
+    font-size: 3vw;
+    color: #FF634D;
+  }
+  p{
+    color: white;
+  }
+  a{
+    background-color: #F6F6F765;
+    color: #F6F6F7;
+  }
+  @media (max-width: 1024px) {
+
+    grid-column: 4/8;
+    grid-row: 3/5;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.4em 1em;
+  }
+  @media (max-width: 600px) {
+    padding: .9em 1em;
+    grid-column: 7/12;
+    grid-row: 3/5;
+      h5{
+        font-size: 2vw;
+      }
+      h2{
+        font-size: 4vw;
+      }
+      p{
+        font-size: 2vw;
+      }
+  }
+}
+.block-5{
+  grid-column: 8/12;
+  grid-row: 3/5;
+  background: white;
+  padding: 50px 50px;
+  padding: 1.4em 1.5em;
+  @media (max-width: 1024px) {
+    grid-column: 7/12;
+    grid-row: 4/6;
+    grid-column: 8/12;
+    grid-row: 2/3;
+  }
+  @media (max-width: 600px) {
+    grid-column: 2/12;
+    grid-row: 6/7;
+  }
+}
+.block-6{
+  grid-column: 8/12;
+  grid-row: 5/7;
+  background: white;
+  padding: 50px 50px;
+  padding: 1.4em 1.5em;
+  @media (max-width: 1024px) {
+    grid-column: 8/12;
+    grid-row: 3/4;
+  }
+  @media (max-width: 768px) {
+    padding: .9em 1em;
+  }
+  @media (max-width: 600px) {
+    grid-column: 2/12;
+    grid-row: 7/8;
+  }
+}
+.block-7{
+  grid-column: 8/12;
+  grid-row: 7/9;
+  padding: 60px 70px;
+  padding: 1.4em 1.5em;
+  background: transparent linear-gradient(270deg, #4DEEFF 0%, #A92FFF 100%) 0% 0% no-repeat padding-box;
+  h5{
+    font-size: 1vw;
+    color: #F6F6F7;
+    opacity: 80%;
+  }
+  h2{
+    font-size: 3vw;
+    color: white;
+  }
+  p{
+    color: white;
+  }
+  @media (max-width: 1024px) {
+    grid-column: 8/12;
+    grid-row: 4/5;
+
+    h5{
+      font-size: 2vw;
+    }
+    h2{
+      font-size: 3vw;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: .9em 1em;
+  }
+  @media (max-width: 600px) {
+    grid-column: 2/12;
+    grid-row: 8/9;
+    h5{
+      font-size: 3vw;
+      margin-bottom: 10px;
+    }
+    h2{
+      font-size: 4vw;
+      margin-bottom: 20px;
+    }
+    p{
+      margin-bottom: 30px;
+    }
+  }
+}
+.block-2,
+.block-5,
+.block-6{
+  h5{
+    font-size: 1vw;
+    color: #3E3E3E;
+  }
+  h2{
+    font-size: 3vw;
+    color: #A92FFF;
+  }
+  p{
+    color: #FF634D;
+  }
+  a{
+    background-color: #3E3E3E1A;
+    color: #3E3E3E;
+  }
+  @media (max-width: 1024px) {
+    h5{
+      font-size: 2vw;
+    }
+    h2{
+      font-size: 3vw;
+    }
+    p{
+      font-size: 2vw;
+    }
+  }
+  @media (max-width: 768px) {
+      padding: .9em 1em;
+    h2{
+      font-size: 4vw;
+    }
+  }
+  @media (max-width: 600px) {
+    padding: 2em 2.5em;
+    h5{
+      font-size: 3vw;
+    }
+    h2{
+      font-size: 6vw;
+    }
+    p{
+      font-size: 3vw;
+    }
+  }
+}

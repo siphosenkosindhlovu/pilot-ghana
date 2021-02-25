@@ -1,63 +1,12 @@
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<title>Copy Me</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-
-<body>
-	<header class="absolute top-0 w-full z-50 hover:bg-grey-lighter hover:bg-opacity-30 transition-all duration-100">
-		<div class="container navbar <%= locals.variant && variant === 'light' ? 'navbar-light' : '' %>  m-auto flex flex-col lg:flex-row items-center">
-			<div class="flex w-full lg:w-auto justify-between items-center">
-				<a href="/" class="nav-link font-bold text-white flex-grow-0 p-0 py-3 pr-3">
-					<svg class="svg h-10 w-16">
-						<use xlink:href="svg/logo.svg#logo"></use>
-					</svg>
-				</a>
-				<button class="bg-transparent border-transparent p-3 material-icons lg:hidden trigger" data-target="#topNav">
-					menu
-				</button>
-			</div>
-			<nav id="topNav" class="lg:flex justify-between overflow-hidden collapsible lg:max-h-full lg:w-full">
-				<div class="flex flex-col lg:flex-row items-center">
-					<a href="/our-services.html" class="nav-link text-grey-lighter">Our services</a>
-					<a href="/about-us.html" class="nav-link text-grey-lighter">About us</a>
-					<a href="/contact-us.html" class="nav-link text-grey-lighter">Contact us</a>
-				</div>
-
-				<div>
-					<a href="#" class="nav-link inline-flex items-center text-grey-lighter group">
-						<span class="opacity-60">
-							Sign in
-						</span>
-						<i class="material-icons text-base ml-1 opacity-60 group-hover:opacity-100">login</i>
-					</a>
-				</div>
-			</nav>
-		</div>
-<div class="border-b-2 border-grey-darker border-solid opacity-30 hidden lg:block"></div>
-	</header> -->
 	<%- include('includes/header.ejs', {variant: 'light', page: 'Home'}) %>
 
 	<section class="min-h-screen relative flex flex-col bg-cover bg-no-repeat"
-		style="background: linear-gradient(0deg, rgba(29, 29, 27, 0.65), rgba(29, 29, 27, 0.65)), url(images/pat-kay.jpg); background-repeat: no-repeat; background-size: cover;">
+		style="background: linear-gradient(to bottom, transparent, rgba(29, 29, 27, 1)), url(images/pat-kay.jpg); background-repeat: no-repeat; background-size: cover;">
 		<div class="container md:grid grid-cols-12 bg-cover bg-no-repeat">
 			<div class="col-start-2 col-span-10 md:mt-32 md:p-5 xxl:p-3">
 				<h1	class="text-xxl gradient-text font-bold md:text-center animate__animated animate__fadeInUp mb-8">
-					Powerful vehicle tracking & fleet control
+					Powerful Vehicle Tracking & Fleet Control
 				</h1>
-				<div>
-					<p
-						class="md:text-center m-auto lg:w-3/5 xl:w-1/2 text-grey-lighter animate__animated animate__fadeInDown">
-						Pilot Ghana is an IT Services provider offering reliable technology driven solutions in Fleet Management.
-					</p>
-				</div>
 			</div>
 		</div>
 		<div
@@ -65,7 +14,7 @@
 			<div>
 				<img class="h-16 " src="svg/We are in Ghana.svg" alt="We are in Ghana">
 			</div>
-			<a href="#" class="block relative w-24 text-center pt-2 group h-24">
+			<a href="https://play.google.com/store/apps/details?id=ru.octys.pilot&hl=en" class="block relative w-24 text-center pt-2 group h-24">
 				<span class="text-white text-xs z-50 absolute w-full inset-x-0">Get App</span>
 				<img class="m-auto absolute bottom-0 z-40" src="images/Get app.png">
 				<div
@@ -75,7 +24,274 @@
 		</div>
 	</section>
 
-	<script src="js/script.js"></script>
-</body>
+	<section class="container">
+		<div class="grid grid-cols-12 gap-3 mb-10">
+			<div class="col-start-1 col-span-12 xl:col-start-2 xl:col-span-10">
+				<div class="md:grid grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 gap-3 mb-3">
+					<div class="md:col-start-1 md:col-span-1 md:row-span-1 mb-3 md:mb-0">
+						<div class="card pb-0 bg-grey-darker">
+							<div class="card-subtitle icon-base bg-gradient-to-br from-aquamarine to-violet">
+								<i class="material-icons text-grey-lighter">gps_fixed</i>
+							</div>
+							<h2 class="card-title text-violet">
+								Real Time Tracking
+							</h2>
+							<div class="card-body mb-4">
+								Monitor the live location and movements of your vehicles and other mobile assets and trace events as
+								they
+								happen.
+							</div>
+							<img class="m-auto w-48" src="images/iPhone 11 Pro 2.png" />
+						</div>
+					</div>
+					<div class="md:col-start-2 md:col-span-1 md:row-span-2 mb-3 md:mb-0">
+						<div class="card pb-64 h-full bg-cover bg-bottom bg-no-repeat  bg-grey-darker"
+							style="background-image: url('images/Africa pattern.png');">
+							<div class="card-subtitle icon-base bg-gradient-to-br from-persimmon to-violet">
+								<i class="material-icons text-grey-lighter">add_road</i>
+							</div>
+							<h2 class="card-title text-persimmon">
+								Geo-Fencing
+							</h2>
+							<div class="card-body mb-10">
+								Mark out operational territories for your vehicle and get an alarm if the vehicle operates outside the
+								territory. Our system will notify you of every time your vehicle exits or enters your defined area of
+								operation. That is reports on every visit, duration and on any zone breaches. </div>
+						</div>
+					</div>
+					<div class="md:col-start-1 md:col-span-1 md:row-start-2 mb-3 md:mb-0 row-span-1">
+						<div class="card h-full  bg-grey-darker">
+							<div class="card-subtitle icon-base bg-gradient-to-br from-pizzaz to-violet">
+								<i class="material-icons text-grey-lighter">history</i>
+							</div>
+							<h2 class="card-title text-pizzaz">
+								History Playback
+							</h2>
+							<div class="card-body">
+								Replay historical location of your vehicle’s movements and activities, and review all past events and
+								alerts that have taken place. Be, even when you might not have been available to track real time.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-3 bg-grey-darker">
+					<div class="card-subtitle icon-base  bg-gradient-to-br from-aquamarine to-violet">
+						<i class="material-icons text-grey-lighter">gps_fixed</i>
+					</div>
+					<h2 class="card-title text-violet">
+						Basic and Advanced Reports
+					</h2>
+					<div class="card-body">
+						<div class="md:grid md:grid-cols-2 md:gap-10">
+							<div>
+								Get fleet activities with Pilot Ghana extensive report types and Alert that record all the vehicles
+								operations. Report on trips, fuel usage, fleet policy violations, servicing and more; with their
+								associated costs. Alerts are sent through SMS, Email, Phone Notification based on your preference.
+							</div>
+							<div>
+								You can run reports on trips, fuel usage, fleet policy violations, servicing and more. The reports are
+								available in a range of formats including PDF, Excel, and XML.
+								<br />
+								<figure>
+									<img src="images/Formats.png" alt="PDF, Excel and XML" />
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:grid md:grid-cols-2 md:grid-rows-3 md:gap-3 mb-3">
+					<div class="card bg-grey-darker md:row-span-3 mb-3 md:mb-0">
+						<h2 class="card-title text-aquamarine">
+							Engine Off/ Remote Vehicle Immobilizer
+						</h2>
+						<div class="card-body">
+							<img src="svg/directions_car-24px.svg" class="mb-6" />
+							<p class="text-grey-lighter">
+								Remotely shut down your vehicle in the event of a carjacking, snatching, or unauthorized usage with a
+								simple command from your phone. The ignition system of your vehicle will remain inactive until you
+								reactivate it from your account.
+							</p>
+						</div>
+					</div>
+					<div class="card md:row-span-2 h-full mb-3 bg-grey-darker">
+						<div class="card-subtitle icon-base bg-gradient-to-br from-persimmon to-violet">
+							<i class="material-icons text-grey-lighter">notifications_active</i>
+						</div>
+						<h2 class="card-title text-persimmon">
+							Event Notifications and Alerts
+						</h2>
+						<div class="card-body">
+							Get instant notifications for conditions that are triggered and feedback on your vehicle use,
+							immediately
+							they are triggered or violated. Alerts can be received by Email, Telegram, SMS or push notifications.
+						</div>
+					</div>
+					<div class="card md:row-span-1 h-full  bg-gradient-to-l from-aquamarine to-violet">
+						<div class="grid grid-cols-3">
+							<div class="col-span-2 font-bold">
+								<span class="text-md md:text-md lg:text-xl text-white">100%</span><br />
+								<span class="md:text-2xl lg:text-md">protection</span>
+							</div>
+							<div>
+								<i class="material-icons text-6xl text-white">
+									security
+								</i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card mb-3 pb-0 bg-gradient-to-b from-persimmon to-violet">
+					<h2 class="card-title text-grey-lighter">
+						Desktop (web version)
+					</h2>
+					<img class="m-auto w-full" src="images/MacBook Pro 16-inch.png" />
+				</div>
+				<div class="md:grid md:grid-cols-2 md:grid-rows-3 md:gap-3 mb-3">
+					<div class="card md:col-start-1 md:row-start-1 md:row-span-2 mb-3 md:mb-0 bg-grey-darker">
+						<div class="card-subtitle icon-base  bg-gradient-to-br from-aquamarine to-violet">
+							<i class="material-icons text-grey-lighter">notifications_active</i>
+						</div>
+						<h2 class="card-title text-violet">
+							Driver Behaviour
+						</h2>
+						<div class="card-body">
+							Our fully-featured driver behaviour module provides you evidence into unwanted driving activities such
+							as
+							aggressive maneuvers, braking, speeding, driving with high RPMs - all of this leads to the wear-out of
+							parts and emergency situations on the road. This analysis can support your business to create a greener
+							and more streamlined fleet.</div>
+					</div>
+					<div
+						class="card md:col-start-2 row-start-1 row-span-3 bg-gradient-to-b from-persimmon via-persimmon to-pizzaz md:row-span-3 mb-3 md:mb-0">
+						<h2 class="card-title text-grey-lighter">
+							Mobile App
+						</h2>
+						<div class="card-body">
+							<img src="images/iPhone 11 Pro.png" class="mb-6 mx-auto w-2/3" />
+							<p class="card-title text-grey-lighter text-center">
+								Available On:</p>
+							<div class="grid grid-cols-2 gap-3">
+								<img src="svg/Google Play.svg" alt="Get in on Google Play">
+								<img src="svg/App store.svg" alt="Get in on Google Play">
+							</div>
+						</div>
+					</div>
+					<div class="card md:col-start-1 md:row-start-3 md:row-span-1 bg-violet mb-3 md:mb-0">
+						<h2 class="card-title text-grey-lighter lg:text-lg">
+							Everything’s under control
+						</h2>
+					</div>
+				</div>
+				<div class="card mb-3 bg-grey-darker overflow-hidden">
+					<div class="md:grid grid-cols-2 gap-3">
+						<div>
+							<div class="card-subtitle icon-base bg-gradient-to-br from-pizzaz to-violet">
+								<i class="material-icons text-grey-lighter">local_gas_station</i>
+							</div>
+							<h2 class="card-title text-grey-lighter">
+								Live Fuel Level Monitoring
+							</h2>
+							<div class="card-body text-grey-lighter">
+								<p>
+									Monitor the live fuel level and usage with an optional addition of a fuel level sensor that can
+									check
+									for refueling, siphoning (fuel theft), leakages and more.
+								</p>
+								<br />
+								<p>
+									You cannot control the prices of fuel but you can control your fuel consumption and ensure fuel
+									efficiency. Pilot Ghana help you to control fuel expenses/cost by providing you fuel monitoring
+									solution to monitor the Refilling and usage of fuel.
+								</p>
+							</div>
+						</div>
+						<div
+							class="water-box bg-no-repeat bg-cover bg-bottom relative text-3xl lg:text-lg font-bold pl-8 pt-64 pb-32 -mx-7 -mb-7 md:ml-0 md:-mr-10 md:-mb-10 xxl:-mr-10 bg-persimmon">
+							The tank is<br />
+							<span class="text-white text-4xl">80%</span> full
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container md:grid grid-cols-12 gap-3 mb-20">
+		<div class="card bg-grey-darker col-start-7 col-span-6 xl:col-start-7 xl:col-span-5 mb-3 md:mb-0 flex flex-col overflow-hidden pb-0">
+			<h2 class="card-title md:text-md">
+				Teltonika FMB122
+			</h2>
+			<div class="card-body opacity-90">
+				Teltonika FMB122 is an advanced GLONASS/GPS tracker with external GNSS antenna, dual-SIM, Bluetooth, multiple
+				vehicles CAN support, crash detection, idling detection, voice calls, internal battery, and a lot more.
+			</div>
+			<div class="mt-auto -mb-6 -ml-6 -mr-6 xxl:-mb-10 xxl:-mr-10 xxl:-ml-10">
+				<img class="min-w-full ml-8" src="images/device-2.png" alt="Device">
+			</div>
+		</div>
+		<div
+			class="row-start-1 col-start-1 col-span-6 xl:col-start-2 xl:col-span-5 grid grid-rows-3 grid-cols-1 md:grid-cols-2 gap-3 mb-3 md:mb-0 text-grey-darker">
+			<div
+				class="card md:bg-gradient-to-br group hover:from-aquamarine hover:to-violet transition-all duration-300 flex items-center justify-center">
+				<div class="card-body flex items-center justify-center relative">
+					<img class="h-16 md:h-auto md:group-hover:hidden mr-5 md:mr-0" src="svg/bluetooth-24px.svg" alt="Bluetooth">
+					<div class="block md:hidden group-hover:block w-full h-full md:text-center transition-all duration-300">
+						<p class="md:text-xs xxl:text-sm md:text-white">Bluetooth for external devices and sensor with low consumption
+							energy
+						</p>
+					</div>
+				</div>
+			</div>
+			<div
+				class="card md:bg-gradient-to-b group hover:from-persimmon hover:to-violet transition-all duration-300 flex items-center justify-center">
+				<div class="card-body flex items-center justify-center relative">
+					<img class="h-16 md:h-auto md:group-hover:hidden mr-5 md:mr-0" src="svg/battery_charging_full-24px.svg" alt="Battery">
+					<div class="block md:hidden group-hover:block w-full h-full md:text-center transition-all duration-300">
+						<p class="md:text-xs xxl:text-sm md:text-white">Backup battery allows to work without external power supply
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="card group md:hover:bg-persimmon transition-all duration-300 flex items-center justify-center">
+				<div class="card-body flex items-center justify-center relative">
+					<img class="h-16 md:h-auto md:group-hover:hidden mr-5 md:mr-0" src="svg/sim_card-24px.svg" alt="SIM Card">
+					<div class="block md:hidden group-hover:block w-full h-full md:text-center transition-all duration-300">
+						<p class="md:text-xs xxl:text-sm md:text-white">
+							Dual SIM will help significantly reduce roaming charges
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="card group md:hover:bg-violet flex items-center justify-center transition-all duration-300">
+				<div class="card-body flex items-center justify-center relative">
+					<img class="h-16 md:h-auto md:group-hover:hidden mr-5 md:mr-0" src="svg/queue_play_next-24px.svg" alt="Play next">
+					<div class="block md:hidden group-hover:block w-full h-full md:text-center transition-all duration-300">
+						<p class="md:text-xs xxl:text-sm md:text-white">
+							Digital inputs and outputs for remote control and monitoring
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="card group md:hover:bg-aquamarine flex items-center justify-center transition-all duration-300">
+				<div class="card-body flex items-center justify-center relative">
+					<img class="h-16 md:h-auto md:group-hover:hidden mr-5 md:mr-0" src="svg/baseline-settings_input_antenna-24px.svg" alt="Antenna">
+					<div class="block md:hidden group-hover:block w-full h-full md:text-center transition-all duration-300">
+						<p class="md:text-xs xxl:text-sm md:text-white">
+							External GNSS antenna expands installation options
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="card group">
+				<div class="card-body flex items-center justify-center relative">
+					<img class="h-16 md:h-auto mr-5 md:mr-0" src="svg/baseline-exposure-24px.svg" alt="Exposure">
+					<div class="block md:hidden w-full h-full md:text-center transition-all duration-300">
+						<p class="md:text-xs xxl:text-sm md:text-white">
+							External GNSS antenna expands installation options
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-</html>
+	<%- include('includes/footer.ejs') %>
